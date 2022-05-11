@@ -3,12 +3,17 @@ import './Title.css'
 import break1 from './images/break1.jpg'
 import break2 from './images/break2.jpg'
 import break3 from './images/break3.jpg'
+import break4 from './images/break4.jpg'
 import lunch from './images/lunch.jpg'
 import lunch2 from './images/lunch2.jpg'
 import lunch3 from './images/lunch3.jpg'
+import lunch4 from './images/lunch4.jpg'
 import shake from './images/shake.jpg'
 import shake2 from './images/shake2.jpg'
 import shake3 from './images/shake3.jpg'
+import shake4 from './images/shake4.jpg'
+import res from './images/res.jpg'
+
 
 
  function Title() {
@@ -85,6 +90,30 @@ import shake3 from './images/shake3.jpg'
       img: shake3,
       desc: `Skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
     },
+    {
+      id: 10,
+      title: 'Banana shake',
+      category: 'Shakes',
+      price: 18.99,
+      img: shake4,
+      desc: `banana milkshakes are rich in potassium, magnesium, fiber and vitamin C and are an excellent choice for a pre-workout snack or a recovery drink. They also contain healthy fats and high-quality protein, if you use the right ingredients..`,
+    },
+    {
+      id: 11,
+      title: 'Biriyani',
+      category: 'Lunch',
+      price: 19.99,
+      img: lunch4,
+      desc: `Chicken biriyani is made with chicken marinated in yogurt, chile powder, and garam and biriyani masala layered with fragrant, spiced basmati rice, and caramelized onions. Swayampurna Mishra.`,
+    },
+    {
+      id: 12,
+      title: 'Idly',
+      category: 'Breakfast',
+      price: 3.99,
+      img: break4,
+      desc: `dli or idly are a type of savoury rice cake, originating from the Indian subcontinent, popular as breakfast foods in Southern India and in Sri Lanka. The cakes are made by steaming a batter consisting of fermented black lentils and rice.`,
+    },
     
   ])
   const [dataRender,setRenderdata]=useState(data)
@@ -103,11 +132,17 @@ import shake3 from './images/shake3.jpg'
    const filtercategory=data.filter(datas=>datas.category===top)
    setRenderdata(filtercategory)
  }
+ const handleclick=()=>{
+   
+   prompt("Enter Your Details And Get A Chance To Win 50% Cashback")
+ }
   return (
     <div>
       <div className='main '>
       <div className='heading '>
-      <div className='menu pt-5'>Our Menu</div>
+      <img src={res} alt="Our Menu" className='menu pt-5'/>
+      <div className='menu'>Time Spot</div>
+      <marquee><q className='quo'>When you eat food with your family and friends, it always tastes better!</q></marquee>
       <div class="underline-ourmenu mb-5"></div>
           <div className='title0  d-flex justify-content-center text-warning  '>
             {uniquecategory.map(top=>
@@ -128,7 +163,9 @@ import shake3 from './images/shake3.jpg'
             
                <div class="underline-content"></div>
                <span className='desc px-2'>{datas.desc}</span>
+               <button onClick={handleclick} className='hlo'>ORDER NOW</button>
                 </div>
+               
                </div>
              )
             }
