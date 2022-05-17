@@ -96,7 +96,7 @@ import res from './images/res.jpg'
       category: 'Shakes',
       price: 18.99,
       img: shake4,
-      desc: `banana milkshakes are rich in potassium, magnesium, fiber and vitamin C and are an excellent choice for a pre-workout snack or a recovery drink. They also contain healthy fats and high-quality protein, if you use the right ingredients..`,
+      desc: `banana milkshakes are rich in potassium, magnesium, fiber and vitamin C and are an excellent choice.`,
     },
     {
       id: 11,
@@ -104,7 +104,7 @@ import res from './images/res.jpg'
       category: 'Lunch',
       price: 19.99,
       img: lunch4,
-      desc: `Chicken biriyani is made with chicken marinated in yogurt, chile powder, and garam and biriyani masala layered with fragrant, spiced basmati rice, and caramelized onions. Swayampurna Mishra.`,
+      desc: `Chicken biriyani is made with chicken marinated in yogurt, chile powder, and garam and biriyani masala.`,
     },
     {
       id: 12,
@@ -112,7 +112,7 @@ import res from './images/res.jpg'
       category: 'Breakfast',
       price: 3.99,
       img: break4,
-      desc: `dli or idly are a type of savoury rice cake, originating from the Indian subcontinent, popular as breakfast foods in Southern India and in Sri Lanka. The cakes are made by steaming a batter consisting of fermented black lentils and rice.`,
+      desc: `dli or idly are a type of savoury rice cake, originating from the Indian subcontinent, popular as breakfast foods in Southern India and in Sri Lanka.`,
     },
     
   ])
@@ -153,7 +153,7 @@ import res from './images/res.jpg'
       </div>
           <div className='menu1 d-flex ml-20   row m-5'>
             {
-              dataRender.map(datas=><div className='menu2 d-flex  col-5 m-3'>
+              dataRender.map(datas=><div className='menu2 d-flex col-sm-2  col-5 m-3'>
               <img src={datas.img} className='images' alt='image'/>
               <div  class="d-flex flex-column ps-2">
                 <div class=" d-flex justify-content-between ">
